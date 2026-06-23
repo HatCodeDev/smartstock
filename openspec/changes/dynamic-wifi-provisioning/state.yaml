@@ -1,0 +1,19 @@
+change: dynamic-wifi-provisioning
+current_phase: verify
+status: IN_PROGRESS
+history:
+  - phase: explore
+    completed_at: "2026-06-04T12:25:00-06:00"
+  - phase: proposal
+    completed_at: "2026-06-04T12:27:00-06:00"
+  - phase: spec
+    completed_at: "2026-06-04T12:29:00-06:00"
+  - phase: design
+    completed_at: "2026-06-04T12:30:00-06:00"
+  - phase: tasks
+    completed_at: "2026-06-04T12:35:00-06:00"
+  - phase: apply
+    completed_at: "2026-06-04T12:40:00-06:00"
+  - phase: verify
+    completed_at: "2026-06-04T12:41:00-06:00"
+next_phase: archive

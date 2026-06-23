@@ -1,0 +1,21 @@
+change: shift-analysis-report
+current_phase: archive
+status: ARCHIVED
+history:
+  - phase: explore
+    completed_at: "2026-05-23T15:26:30-06:00"
+  - phase: proposal
+    completed_at: "2026-05-23T15:30:07-06:00"
+  - phase: spec
+    completed_at: "2026-05-23T15:30:15-06:00"
+  - phase: design
+    completed_at: "2026-05-23T15:30:24-06:00"
+  - phase: tasks
+    completed_at: "2026-05-23T15:30:29-06:00"
+  - phase: apply
+    completed_at: "2026-05-23T15:32:54-06:00"
+  - phase: verify
+    completed_at: "2026-05-23T15:34:41-06:00"
+  - phase: archive
+    completed_at: "2026-05-23T15:34:47-06:00"
+next_phase: null

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartStock | Control de Inventario</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#111116">
+
+    <!-- iOS Safari (Add to Home Screen) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="SmartStock">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-192.png">
+
+    <!-- Windows Tile Metadata -->
+    <meta name="msapplication-TileImage" content="icons/icon-192.png">
+    <meta name="msapplication-TileColor" content="#111116">
+    
+    <!-- Design System - Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- SW Killer: Prevents cached index.html from breaking dev on localhost -->
+    <script>
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(registrations => {
+            for (let registration of registrations) {
+              registration.unregister();
+              console.log('🧹 SW Killer: Service Worker unregistered for localhost');
+            }
+          });
+        }
+      }
+    </script>
+    
+    <!-- App Shell CSS -->
+    <link rel="stylesheet" href="dist/app.css">
+    
+    <style>
+      /* Fallback for loading state */
+      #app:empty::before {
+        content: 'Inicializando SmartStock...';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Inter', sans-serif;
+        color: #64748b;
+        font-size: 0.9rem;
+      }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <!-- Main Entry Point -->
+    <script src="dist/app.js" type="module"></script>
+</body>
+</html>

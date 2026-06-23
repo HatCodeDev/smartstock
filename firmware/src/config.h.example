@@ -1,0 +1,31 @@
+#pragma once
+
+// WiFi
+#define WIFI_SSID       "tu_red_wifi"
+#define WIFI_PASSWORD   "tu_clave_wifi"
+
+// MQTT (HiveMQ Cloud)
+#define MQTT_BROKER     "ac6d942dc1324e21a40e30d319a17205.s1.eu.hivemq.cloud"
+#define MQTT_PORT       8883
+#define MQTT_USERNAME   "tu_usuario_hivemq"
+#define MQTT_PASSWORD   "tu_clave_hivemq"
+
+// Dispositivo
+#define DEVICE_ID       "smartstock-portal-01"
+
+// Hardware (validado en M3/M4 prep)
+#define FM505_BAUD      38400
+#define FM505_RX_PIN    16
+#define FM505_TX_PIN    17
+#define BUZZER_PIN      25
+#define BUZZER_CHANNEL  0
+#define BUZZER_FREQ     2000
+#define BTN_MODE_PIN    26
+#define LED_STATUS_PIN  2
+
+// Timing
+#define RFID_POLL_MS       50    // Intervalo entre comandos Q
+#define BATCH_WINDOW_MS    500   // Ventana de acumulación
+#define DEDUP_WINDOW_MS    2000  // Ventana de deduplicación
+#define OFFLINE_MAX_BATCH  10    // Máx batches en buffer RAM
+#define OFFLINE_RETRY_MS   30000 // Retry cada 30s
